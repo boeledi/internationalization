@@ -15,12 +15,12 @@
             "string_gender": {
                 "male": "Je suis un homme",
                 "female": "Je suis une femme",
-                "other": "A votre avis?"
+                "other": "Non mentionné"
             },
             "string_gender_values": {
                 "male": "Je suis un homme de {{size}}",
                 "female": "Je suis une femme de {{size}}",
-                "other": "A votre avis?"
+                "other": "Non mentionné"
             }
         },
         "values": {

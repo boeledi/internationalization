@@ -15,12 +15,12 @@
             "string_gender": {
                 "male": "I am a man",
                 "female": "I am a woman",
-                "other": "guess..."
+                "other": "Not specified"
             },
             "string_gender_values": {
                 "male": "I am a man. Height: {{size}}",
                 "female": "I am a woman. Height: {{size}}",
-                "other": "guess?"
+                "other": "Not specified"
             }
         },
         "values": {
