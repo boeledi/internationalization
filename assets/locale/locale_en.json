@@ -1,0 +1,30 @@
+{
+    "demoPage": {
+        "title": "Title of my Page",
+        "buttons": {
+            "french": "Français",
+            "english": "English"
+        },
+        "tests": {
+            "string_values": "My name is {{name}} and I live in {{country}}.",
+            "string_plural": {
+                "=0": "I have no children",
+                "=1": "I have a child",
+                ">1": "I have several children"
+            },
+            "string_gender": {
+                "male": "I am a man",
+                "female": "I am a woman",
+                "other": "guess..."
+            },
+            "string_gender_values": {
+                "male": "I am a man. Height: {{size}}",
+                "female": "I am a woman. Height: {{size}}",
+                "other": "guess?"
+            }
+        },
+        "values": {
+            "my_country": "Belgium"
+        }
+    }
+}
