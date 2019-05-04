@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:internationalization/blocs/bloc_provider.dart';
 import 'package:internationalization/blocs/translations_bloc.dart';
 import 'package:internationalization/utils/global_translations.dart';
-import 'package:intl/intl.dart';
 
 class DemoPage extends StatelessWidget {
   @override
@@ -25,13 +24,13 @@ class DemoPage extends StatelessWidget {
         allTranslations.currentLanguage == 'fr' ? 'en' : 'fr';
     final String buttonCaption = allTranslations.text(
         'demoPage.buttons.${otherLanguage == 'en' ? 'english' : 'french'}');
-//    final NumberFormat format = NumberFormat.compact(locale: allTranslations.locale.languageCode);
+
+/* -- Regular way
     final MaterialLocalizations localizations = MaterialLocalizations.of(context);
     final Locale currentLocale = Localizations.localeOf(context);
     final NumberFormat format = NumberFormat.compact(locale: currentLocale.languageCode);
-    String stringSize = format.format(1.8);
-
-    stringSize = allTranslations.valueToString(1200.8, format: GlobalTranslationsNumberFormat.normal, numberOfDecimals: 4);
+-- */
+    String stringSize = allTranslations.valueToString(1.8, format: GlobalTranslationsNumberFormat.normal, numberOfDecimals: 2);
 
     return Scaffold(
       appBar: AppBar(
@@ -162,7 +161,6 @@ class Page2 extends StatelessWidget {
       body: Container(
         child: Center(
           child: Text(
-//            localizations.formatTimeOfDay(TimeOfDay.now()),
             localizations.formatMonthYear(DateTime.now()),
           ),
         ),
