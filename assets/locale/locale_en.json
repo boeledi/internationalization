@@ -3,7 +3,8 @@
         "title": "Title of my Page",
         "buttons": {
             "french": "Français",
-            "english": "English"
+            "english": "English",
+            "selectDate": "Select a date"
         },
         "tests": {
             "string_values": "My name is {{name}} and I live in {{country}}.",
@@ -26,5 +27,8 @@
         "values": {
             "my_country": "Belgium"
         }
+    },
+    "page2": {
+        "title": "Title page 2"
     }
 }

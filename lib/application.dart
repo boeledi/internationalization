@@ -29,21 +29,28 @@ class ApplicationState extends State<Application> {
   Widget build(BuildContext context) {
     return BlocProvider<TranslationsBloc>(
       bloc: translationsBloc,
-      child: StreamBuilder<String>(
-        stream: translationsBloc.currentLanguage,
-        builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+      child: StreamBuilder<Locale>(
+        stream: translationsBloc.currentLocale,
+        initialData: allTranslations.locale,
+        builder: (BuildContext context, AsyncSnapshot<Locale> snapshot) {
+
           return MaterialApp(
             title: 'Application Title',
 
             ///
             /// Multi lingual
             ///
+            locale: snapshot.data ?? allTranslations.locale,
             localizationsDelegates: [
               GlobalMaterialLocalizations.delegate,
               GlobalWidgetsLocalizations.delegate,
             ],
             supportedLocales: allTranslations.supportedLocales(),
 
+            routes: {
+              '/page2': (BuildContext context) => Page2(),
+            },
+            
             home: DemoPage(),
           );
         }

@@ -6,6 +6,7 @@ import 'dart:ui';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:internationalization/utils/preferences.dart';
+import 'package:intl/intl.dart';
 
 const List<String> _kSupportedLanguages = ["en","fr"];
 
@@ -154,7 +155,7 @@ class GlobalTranslations {
   }
 
   get currentLanguage => _locale == null ? '' : _locale.languageCode;
-  get locale => _locale;
+  Locale get locale => _locale;
   
   ///
   /// One-time initialization
@@ -206,19 +207,98 @@ class GlobalTranslations {
   }
 
   ///
+  /// NumberToString
+  /// 
+  /// Stringify a value, based on a format (also based on the current Locale)
+  ///
+  String valueToString(
+    num value,
+    {
+      GlobalTranslationsNumberFormat format = GlobalTranslationsNumberFormat.normal,
+      int numberOfDecimals = 2,
+    }
+  ){
+    NumberFormat numberFormat;
+    
+    switch(format){
+      case GlobalTranslationsNumberFormat.currency:
+        numberFormat = NumberFormat.currency(locale: _locale.languageCode);
+        break;
+
+      case GlobalTranslationsNumberFormat.compact:
+        numberFormat = NumberFormat.compact(locale: _locale.languageCode);
+        break;
+
+      case GlobalTranslationsNumberFormat.compactCurrency:
+      numberFormat = NumberFormat.compactCurrency(locale: _locale.languageCode);
+        break;
+
+      case GlobalTranslationsNumberFormat.compactLong:
+        numberFormat = NumberFormat.compactLong(locale: _locale.languageCode);
+        break;
+
+      case GlobalTranslationsNumberFormat.compactSimpleCurrency:
+        numberFormat = NumberFormat.compactSimpleCurrency(locale: _locale.languageCode);
+        break;
+
+      case GlobalTranslationsNumberFormat.fixedNumberOfDecimals:
+        final String decimals = "0000000000000000".substring(0, numberOfDecimals);
+        numberFormat = NumberFormat("0.$decimals", _locale.languageCode);
+        break;
+
+      default:
+        numberFormat = NumberFormat(null, _locale.languageCode);
+    }
+
+    return numberFormat.format(value);
+  }
+
+  ///
   /// Singleton Factory
   /// 
-  static final GlobalTranslations _translations = new GlobalTranslations._internal();
-  factory GlobalTranslations() {
-    return _translations;
-  }
+  static final GlobalTranslations _translations = GlobalTranslations._internal();
+  factory GlobalTranslations() => _translations;
   GlobalTranslations._internal();
 }
 
-GlobalTranslations allTranslations = new GlobalTranslations();
+GlobalTranslations allTranslations = GlobalTranslations();
 
 enum GlobalTranslationsGender {
   male,
   female,
   other,
 }
+
+enum GlobalTranslationsNumberFormat {
+  normal,
+  currency,
+  compact,
+  compactCurrency,
+  compactLong,
+  compactSimpleCurrency,
+  fixedNumberOfDecimals,
+}
+
+/* -- not needed
+class TranslationsDelegate extends LocalizationsDelegate<GlobalTranslations> {
+  const TranslationsDelegate({this.newLocale});
+
+  final Locale newLocale;
+
+  @override
+  bool isSupported(Locale locale) {
+    return _kSupportedLanguages.contains(locale.languageCode);
+  }
+
+  @override
+  Future<GlobalTranslations> load(Locale locale) async {
+    await allTranslations.setNewLanguage((newLocale ?? locale).languageCode);
+    return allTranslations;
+  }
+
+  @override
+  bool shouldReload(LocalizationsDelegate<GlobalTranslations> old) {
+    return true;
+  }
+}
+-- */

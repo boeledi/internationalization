@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:internationalization/blocs/bloc_provider.dart';
 import 'package:internationalization/blocs/translations_bloc.dart';
 import 'package:internationalization/utils/global_translations.dart';
+import 'package:intl/intl.dart';
 
 class DemoPage extends StatelessWidget {
   @override
@@ -24,6 +25,13 @@ class DemoPage extends StatelessWidget {
         allTranslations.currentLanguage == 'fr' ? 'en' : 'fr';
     final String buttonCaption = allTranslations.text(
         'demoPage.buttons.${otherLanguage == 'en' ? 'english' : 'french'}');
+//    final NumberFormat format = NumberFormat.compact(locale: allTranslations.locale.languageCode);
+    final MaterialLocalizations localizations = MaterialLocalizations.of(context);
+    final Locale currentLocale = Localizations.localeOf(context);
+    final NumberFormat format = NumberFormat.compact(locale: currentLocale.languageCode);
+    String stringSize = format.format(1.8);
+
+    stringSize = allTranslations.valueToString(1200.8, format: GlobalTranslationsNumberFormat.normal, numberOfDecimals: 4);
 
     return Scaffold(
       appBar: AppBar(
@@ -39,7 +47,7 @@ class DemoPage extends StatelessWidget {
             // Button to switch from one language to the other
             //
             RaisedButton(
-              child: Text(buttonCaption),
+              child: Text('==> $buttonCaption'),
               onPressed: () {
                 //
                 // Switch the working language
@@ -105,11 +113,58 @@ class DemoPage extends StatelessWidget {
               "demoPage.tests.string_gender_values",
               gender: GlobalTranslationsGender.male,
               values: {
-                "size": "1.80m"
+                "size": stringSize + "m",
               }
             )),
 
+            // Separation
+            Divider(),
+
+            // Date Picker
+            RaisedButton(
+              onPressed: () => _selectDate(context),
+              child: Text(allTranslations.text('demoPage.buttons.selectDate')),
+            ),
+
+            // Separation
+            Divider(),
+
+            // Next Page
+            RaisedButton(
+              onPressed: () => Navigator.of(context).pushNamed('/page2'),
+              child: Text('==> Page 2'),
+            ),
           ],
+        ),
+      ),
+    );
+  }
+
+  Future _selectDate(BuildContext context) async {
+    DateTime picked = await showDatePicker(
+      context: context,
+      initialDate: DateTime.now(),
+      firstDate: DateTime(2016),
+      lastDate: DateTime(2020),
+    );
+  }
+}
+
+class Page2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    MaterialLocalizations localizations = MaterialLocalizations.of(context);
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(allTranslations.text('page2.title')),
+      ),
+      body: Container(
+        child: Center(
+          child: Text(
+//            localizations.formatTimeOfDay(TimeOfDay.now()),
+            localizations.formatMonthYear(DateTime.now()),
+          ),
         ),
       ),
     );

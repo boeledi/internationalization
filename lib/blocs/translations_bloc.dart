@@ -1,31 +1,21 @@
 import 'dart:async';
+import 'dart:ui';
 
 import 'package:internationalization/blocs/bloc_provider.dart';
 import 'package:internationalization/utils/global_translations.dart';
 import 'package:internationalization/utils/preferences.dart';
-import 'package:rxdart/subjects.dart';
-
-const String _kDefaultLanguageName = 'en';
 
 class TranslationsBloc implements BlocBase {
-  BehaviorSubject<String> _languageController = BehaviorSubject<String>();
-  Stream<String> get currentLanguage => _languageController;
+  StreamController<String> _languageController = StreamController<String>();
+  Stream<String> get currentLanguage => _languageController.stream;
 
-  TranslationsBloc(){
-    _init();
-  }
-
-  void _init() async {
-    String languageName = await preferences.getPreferredLanguage();
-    if (languageName == ''){
-      languageName = _kDefaultLanguageName;
-    }
-    _languageController.sink.add(languageName);
-  }
+  StreamController<Locale> _localeController = StreamController<Locale>();
+  Stream<Locale> get currentLocale => _localeController.stream;
 
   @override
   void dispose() {
     _languageController?.close();
+    _localeController?.close();
   }
 
   void setNewLanguage(String newLanguage) async {
@@ -36,5 +26,6 @@ class TranslationsBloc implements BlocBase {
     await allTranslations.setNewLanguage(newLanguage);
 
     _languageController.sink.add(newLanguage);
+    _localeController.sink.add(allTranslations.locale);
   }
 }

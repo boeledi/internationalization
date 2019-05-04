@@ -1,36 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b6a218c7-7e77-4340-a3d0-7d94498e4b79" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_for_Android.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_for_Android.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/main_dart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/main_dart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/internationalization_android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/android/internationalization_android.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/application.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/application.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/blocs/translations_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/blocs/translations_bloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/demo_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/demo_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/global_translations.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/global_translations.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.dart_tool/" />
+    <ignored path="$PROJECT_DIR$/.idea/" />
+    <ignored path="$PROJECT_DIR$/.pub/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="main.dart" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/main.dart">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/application.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="326">
+              <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://D:/flutter/packages/flutter_localizations/lib/src/material_localizations.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="581" column="61" selection-start-line="581" selection-start-column="61" selection-end-line="581" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/pages/demo_page.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/flutter/packages/flutter/lib/src/widgets/localizations.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="413" column="46" selection-start-line="413" selection-start-column="46" selection-end-line="413" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="ToolWindowManager">
-    <editor active="true" />
-    <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-    </layout>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1186" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <option name="show-excluded-files" value="false" />
+        <subPane>
+          <expand>
+            <path>
+              <item name="internationalization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="internationalization" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="internationalization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="internationalization" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="internationalization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="internationalization" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b6a218c7-7e77-4340-a3d0-7d94498e4b79" name="Default Changelist" comment="" />
+      <created>1556959291155</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556959291155</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Captures" side_tool="true" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Dart Analysis" weight="0.3291262" />
+      <window_info anchor="bottom" id="Run" />
+      <window_info anchor="bottom" id="Logcat" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info active="true" anchor="bottom" id="Debug" visible="true" weight="0.50970876" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
+      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Flutter Inspector" />
+      <window_info anchor="right" id="Flutter Outline" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="FlutterRunConfigurationType">
+        <watch expression="localizations" language="Dart" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>localizations</expression-string>
+        <language-id>Dart</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>context.inheritFromWidgetOfExactType</expression-string>
+        <language-id>Dart</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/application.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/flutter/packages/flutter/lib/src/widgets/localizations.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="413" column="46" selection-start-line="413" selection-start-column="46" selection-end-line="413" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/demo_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/flutter/packages/flutter_localizations/lib/src/material_localizations.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="581" column="61" selection-start-line="581" selection-start-column="61" selection-end-line="581" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
