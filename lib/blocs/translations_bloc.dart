@@ -6,7 +6,7 @@ import 'package:internationalization/utils/global_translations.dart';
 import 'package:internationalization/utils/preferences.dart';
 
 class TranslationsBloc implements BlocBase {
-  StreamController<String> _languageController = StreamController<String>();
+  StreamController<String> _languageController = StreamController<String>.broadcast();
   Stream<String> get currentLanguage => _languageController.stream;
 
   StreamController<Locale> _localeController = StreamController<Locale>();
