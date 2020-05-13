@@ -10,9 +10,9 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^0.1.2
-  shared_preferences: ^0.4.3
-  rxdart: ^0.21.0
-  intl: ^0.15.8
+  shared_preferences: ^0.5.7+2
+  rxdart: ^0.24.0
+  intl: ^0.16.1
 
   flutter_localizations:
     sdk: flutter

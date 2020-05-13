@@ -28,33 +28,31 @@ class ApplicationState extends State<Application> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider<TranslationsBloc>(
-      bloc: translationsBloc,
+      blocBuilder: () => translationsBloc,
       child: StreamBuilder<Locale>(
-        stream: translationsBloc.currentLocale,
-        initialData: allTranslations.locale,
-        builder: (BuildContext context, AsyncSnapshot<Locale> snapshot) {
+          stream: translationsBloc.currentLocale,
+          initialData: allTranslations.locale,
+          builder: (BuildContext context, AsyncSnapshot<Locale> snapshot) {
+            return MaterialApp(
+              title: 'Application Title',
 
-          return MaterialApp(
-            title: 'Application Title',
+              ///
+              /// Multi lingual
+              ///
+              locale: snapshot.data ?? allTranslations.locale,
+              localizationsDelegates: [
+                GlobalMaterialLocalizations.delegate,
+                GlobalWidgetsLocalizations.delegate,
+              ],
+              supportedLocales: allTranslations.supportedLocales(),
 
-            ///
-            /// Multi lingual
-            ///
-            locale: snapshot.data ?? allTranslations.locale,
-            localizationsDelegates: [
-              GlobalMaterialLocalizations.delegate,
-              GlobalWidgetsLocalizations.delegate,
-            ],
-            supportedLocales: allTranslations.supportedLocales(),
+              routes: {
+                '/page2': (BuildContext context) => Page2(),
+              },
 
-            routes: {
-              '/page2': (BuildContext context) => Page2(),
-            },
-            
-            home: DemoPage(),
-          );
-        }
-      ),
+              home: DemoPage(),
+            );
+          }),
     );
   }
 }
